@@ -1,0 +1,2 @@
+# Pattern_Recognition_Project
+In this project we tried to optimize the clustering process on a IMDB dataset where we tried to put the users into clusters based on their preferences. In the end we tried to develop a neural network to achieve our goal.
