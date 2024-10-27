@@ -1,0 +1,139 @@
+/* movieStyles.css */
+.firstofall {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ShowTimes {
+  margin-bottom: 100px;
+}
+/* Styling for the movie title */
+.movie-title {
+  padding: 20px;
+  font-family: fantasy;
+  text-align: center;
+  color: #fff;
+}
+
+/* Styling for the movie container */
+.movie-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -35px;
+}
+
+/* Styling for the movie details box */
+.movie-details-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
+
+/* Styling for the movie poster */
+.movie-poster {
+  width: 90%;
+  height: 60%;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+
+.movie-details {
+  color: #ccc;
+}
+/* Styling for the movie description */
+.movie-description {
+  width: 70%;
+  height: 60%;
+  padding: 2px;
+  color: #fff;
+}
+
+/*=========================*/
+/*=========================*/
+/*=========================*/
+/*=========================*/
+/*=========================*/
+/*=========================*/
+/*=========================*/
+/*=========================*/
+
+/* Styling for the submit button */
+.submit-button {
+  margin-top: 3rem;
+  background-color: #27ae60;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #219a52;
+}
+
+/* styles.seats */
+.seat {
+  display: inline-block;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #00f;
+  color: #fff;
+}
+
+/*======ημερολόγιο=======*/
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.schedule-item {
+  margin: 0.5rem;
+}
+
+.day-button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* ... υπάρχον στυλ ... */
+
+.day-button.selected {
+  background-color: #aaa;
+}
+
+.time-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.time-buttons button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.time-buttons.selected {
+  background-color: #aaa;
+}

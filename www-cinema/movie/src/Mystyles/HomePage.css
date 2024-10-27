@@ -1,0 +1,61 @@
+/* styles.css */
+
+/* Στυλ για τον περιβάλλοντα κεντρικό κουτί */
+.Box-root {
+  width: 100%;
+  height: 100vh;
+  margin-top: 2;
+  margin: auto;
+}
+
+/* Στυλ για την εικόνα */
+.Box-imageContainer {
+  margin: auto;
+  width: 100%;
+  height: 45%;
+  padding: 2;
+  display: flex;
+}
+
+.Box-imageContainer img {
+  min-width: 20%;
+  max-width: 100%;
+  min-height: 135%;
+  max-height: 250%;
+  margin-bottom: 10%;
+  margin-top: 2%;
+}
+
+/* Στυλ για τον τίτλο "Latest Releases" */
+.Box-titleContainer {
+  padding: 5px;
+  margin: auto;
+  margin-top: 17%;
+  margin-bottom: 30px;
+}
+
+/* Στυλ για τη λίστα των τελευταίων κυκλοφοριών */
+.Box-moviesContainer {
+  gap: 5;
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+/* Στυλ για τα κουμπιά και την αναδίπλωση */
+.Box-buttonContainer {
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+/* Στυλ για το κουμπί "View All Movies" */
+.Button-viewAllMovies {
+  margin: auto;
+  color: #2b2d42;
+}

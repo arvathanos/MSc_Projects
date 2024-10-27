@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --selected-color: #0068c8;
+  --occupied-color: #1e2937;
+  --available-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.DialogTitle {
+  color: white;
+}
+.text {
+  color: white;
+}
+.container {
+  perspective: 1000px;
+  margin-bottom: 3px;
+}
+
+.seat {
+  background-color: #a1a7b1;
+  height: 20px; /* Adjust the height as needed */
+  width: 25px; /* Adjust the width as needed */
+  margin: 10px; /* Adjust the margin as needed */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+}
+
+.seat.selected {
+  background-color: var(--selected-color);
+}
+
+.seat.occupied {
+  background-color: var(--occupied-color);
+}
+
+/* Selects the second row */
+.seat:nth-of-type(2) {
+  margin-right: 30px; /* Adjust the margin as needed */
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 30px; /* Adjust the margin as needed */
+}
+
+.seat:not(.occupied) {
+  cursor: pointer;
+  transform: scale(1.4); /* Adjust the scale factor as needed */
+}
+
+.showcase .seat:not(.occupied) {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px; /* Adjust margin as needed */
+}
+
+.showcase li small {
+  margin-left: 5px; /* Adjust margin as needed */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.screen {
+  background-color: gray;
+  height: 120px; /* Adjust the height as needed */
+  width: 100%;
+  margin: 30px 0; /* Adjust the margin as needed */
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+p.text {
+  margin: 10px 0; /* Adjust margin as needed */
+}
+
+p.text span {
+  color: #6feaf6;
+}
+
+.row::before {
+  content: attr(data-row);
+  margin-right: 10px;
+  font-weight: bold;
+  color: white; /* Adjust the color as needed */
+  display: flex;
+  flex-wrap: wrap;
+
+  align-content: center;
+}
+
+.seat::after {
+  content: attr(data-seat);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px; /* Adjust the font size as needed */
+  color: black; /* Adjust the color as needed */
+}
